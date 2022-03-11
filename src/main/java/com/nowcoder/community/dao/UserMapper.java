@@ -8,4 +8,11 @@ public interface UserMapper {
 
     User selectById(int id);
 
+    User selectByName(String name);
+
+    User selectByEmail(String email);
+
+    void addUser(User user);
+
+    void updateStatus(int id, int status);
 }
